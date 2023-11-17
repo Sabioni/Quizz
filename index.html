@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="image/icon.png" type="image/x-icon">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!--utilizando defer faz o script espere o DOM carregar podendo deixar aqui encima o script -->
+     <script src="js/script.js" defer></script> 
+</head>
+<body>
+    <h1 id="main-title">Quizz de programação</h1>
+    <!--Score Board-->
+    <div id="score-container" class="hide">
+        <h2>Parabéns !!</h2>
+        <p id = "display-score"><span>90</span>%</p>
+        <p>Voce acertou <span id="correct-answers">0</span> de <span id="questions-qty">10 </span> perguntas</p>
+        <button id="restart" class="btn btn-outline-primary">Refazer Quiz</button>
+    </div>
+        <!--onde serão feitas as perguntas e alternativas-->
+        <div id="quiz-container">
+            <p id="question">
+                <span id="question-number">1</span> - <span id="question-text"> qual o tamanho do teu pé ?</span>
+            </p>
+            <div id="answers-box">
+                <button class="btn btn-outline-primary"><span class="btn-letter">a</span><span class="question-answer">teste1</span></button>
+                <button class="btn btn-outline-primary"><span class="btn-letter">b</span><span class="question-answer">teste2</span></button>
+                <button class="btn btn-outline-primary"><span class="btn-letter">c</span><span class="question-answer">teste3</span></button>
+                <button class="btn btn-outline-primary"><span class="btn-letter">d</span><span class="question-answer">teste4</span></button>
+            </div>
+        </div>
+    </div>
+
+  <!--TEMPLATE DA RESPOSTA-->
+  <button class="answer-template hide"><span class="btn-letter">a</span><span class="question-answer">teste1</span></button>
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
